@@ -1,1 +1,4 @@
-App Engine application that saves participands in a datastore and outputs a shuffled list.
+App Engine application that saves participants in a datastore and outputs a shuffled list.
+
+Uses Bootstrap for the layout.
+
