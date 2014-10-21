@@ -1,0 +1,5 @@
+.project
+.pydevproject
+.settings/
+src/*.pyc
+src/*/.tmp_*

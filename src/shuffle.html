@@ -1,0 +1,47 @@
+<html>
+<header>
+    <title>Code Quoter Sweepstakes</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sweepstakes">
+    <meta name="author" content="Vanessa Sabino">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          background-color: #eee;
+        }
+
+        .box {
+          max-width: 420px;
+          padding: 15px;
+          margin: 0 auto;
+        }
+
+    </style>
+</header>
+
+  <body>
+    <div class="box">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for person in people %}
+              <tr>
+                <td>{{person.name}}</td>
+                <td>{{person.email}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+    </div>
+  </body>
+</html>
