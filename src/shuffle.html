@@ -21,6 +21,8 @@
           margin: 0 auto;
         }
 
+        .hidden-span{ display:none }
+
     </style>
 </header>
 
@@ -37,7 +39,7 @@
               {% for person in people %}
               <tr>
                 <td>{{person.name}}</td>
-                <td>{{person.email}}</td>
+                <td><button type="button" id="show-{{person.email}}" class="btn btn-xs btn-primary" onclick="getElementById('hide-{{person.email}}').style.display = 'block';getElementById('show-{{person.email}}').style.display = 'none';">Show Email</button><span class="hidden-span" id="hide-{{person.email}}">{{person.email}}</span></td>
               </tr>
               {% endfor %}
             </tbody>
